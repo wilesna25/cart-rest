@@ -71,7 +71,7 @@ public class CartController {
      * @param productId the ID of the product to be deleted from the cart
      * @return a message indicating the result of the operation
      */
-    @PostMapping("/{cartId}/delete/{productId}")
+    @PostMapping("/{cartId}/deleteProduct/{productId}")
     public String deleteProductFromCart(@PathVariable int productId) {
             return cartProductService.deleteProductFromCart(productId);
     }
